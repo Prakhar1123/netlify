@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "homepage": "https://Prakhar1123.github.io/myapp",
+  "homepage": "https://Prakhar1123.github.com/coding",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
