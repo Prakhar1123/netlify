@@ -1,6 +1,9 @@
+/* Styles for .App class */
+
+
 .App {
   text-align: center;
-  background-color: #282c34
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -14,17 +17,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -36,4 +28,135 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Shared styles for all screen sizes */
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2rem + 2vmin);
+  color: white;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  margin-left: -3px;
+}
+
+.fixed-text p {
+  font-size: 1.6rem;
+  width: 56rem;
+  margin: 0;
+}
+
+.ps {
+  color: rgba(242, 243, 244, 0.584);
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #282c34;
+  overflow: hidden;
+}
+
+.my-image {
+  display: block;
+  width: auto;
+  max-height: 50vh;
+  border-radius: 60%;
+  object-fit: cover;
+  margin-top: -0.01099rem;
+  margin-right: 1.2rem;
+  margin-bottom: 60px;
+}
+
+.animate-character {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #FF5733, purple, #5733FF);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 3.8s linear infinite;
+  position: relative;
+}
+
+.download-link.button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.download-link.button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1366px) {
+  .header {
+    font-size: 1.7rem;
+  }
+  .App-header {
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    font-size: 1.5rem;
+    .App-header {
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.3rem;
+  }
+  .App-header {
+    font-size: calc(10px + 2vmin);
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.2rem;
+  }
+  .App-header {
+    font-size: calc(10px + 2vmin);
+  }
+}
 }

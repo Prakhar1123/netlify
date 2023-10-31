@@ -1,11 +1,13 @@
+/* Original styles */
 .experience {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .experience-box {
-    width: 100%;
+    width: 90%;
     margin: 20px 0;
     padding: 20px;
     border: 1px solid #ccc;
@@ -16,13 +18,13 @@
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
     line-height: 1.4;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .experience-box h2 {
     font-size: 1.2rem;
     margin: 5px 0;
-    color: #007BFF; /* Adjust the color as per your preference */
+    color: #007BFF;
 }
 
 .experience-box p {
@@ -40,7 +42,6 @@
 
 .skills-list li {
     margin-right: 10px;
-    
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -48,20 +49,18 @@
 }
 
 .skills-list img {
-    width: 20px; /* Adjust the width of the icons as needed */
-    height: 20px; /* Adjust the height of the icons as needed */
+    width: 20px;
+    height: 20px;
     margin: 2px;
-    margin-right: 5px; 
-     
-     /* Add margin to separate the icon from the text  */
+    margin-right: 5px;
 }
 
-
-.skill-box img{
+.skill-box img {
     width: 20px;
     height: 20px;
     margin-right: 3px;
 }
+
 .skill-box {
     display: flex;
     align-items: center;
@@ -69,5 +68,30 @@
     padding: 5px 10px;
     border-radius: 2px;
     margin: 5px 0;
-    margin-right: 5px; /* Add right margin to create space between div elements */
+    margin-right: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1366px) {
+    .experience-box h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .experience-box h2 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-box h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-box h2 {
+        font-size: 0.7rem;
+    }
 }

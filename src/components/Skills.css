@@ -1,4 +1,4 @@
-/* Project.css */
+/* Original styles */
 .skills {
     display: flex;
     flex-direction: column;
@@ -6,56 +6,101 @@
     text-align: center;
     margin: 20px 0;
     margin-left: 20px;
+    overflow: hidden;
 }
 
 .skills-title {
     font-size: 1.8rem;
     color: white;
     margin-bottom: 20px;
-    margin-right: 50px; /* Added margin to separate the title from the boxes */
+    margin-right: 50px;
 }
 
 .skills-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin: 0 -10px; /* Adjust the negative margin to reduce spacing between boxes and from borders */
+    max-width: 100%; /* Set a maximum width to prevent the back-end box from going out of the main container */
 }
 
 .front-end-skills,
 .back-end-skills {
-    width: 45%;
+    width: calc(50% - 10px); /* 50% width with space between boxes */
+
     padding: 20px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f5f5f5;
     text-align: left;
-    margin-right: 40px;
-    transition: background-color 0.3s; /* Add a smooth transition effect */
+    margin-right: 10px; /* Added margin to separate boxes */
+    transition: background-color 0.3s;
 }
 
 .front-end-skills:hover {
-    background-color: #e0f7fa; /* Change the background color on hover */
+    background-color: #e0f7fa;
 }
 
 .back-end-skills:hover {
-    background-color: #fde0f7; /* Change the background color on hover */
+    background-color: #fde0f7;
 }
+
 .skills-container li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .skills-container img {
-    /* width: 20px; Set the desired width for the icons */
-    height: 20px; /* Set the desired height for the icons */
-    margin-right: 10px; /* Add margin to separate the icon from the text */
+    height: 20px;
+    margin-right: 10px;
 }
 
-/* ... (other CSS rules) */
+/* Media queries for responsiveness */
+/* Original styles */
 
+/* ... (previous CSS) */
 
+/* Media queries for responsiveness */
+@media (max-width: 1366px) {
+    .skills-title {
+        font-size: 1.5rem;
+        margin-right: 30px;
+    }
 
+    .front-end-skills,
+    .back-end-skills {
+        width: calc(50% - 10px); /* Adjusted width for responsiveness */
+        margin-right: 10px;
+    }
+}
 
+@media (max-width: 1024px) {
+    .skills-title {
+        font-size: 1.4rem;
+        margin-right: 20px;
+    }
+}
 
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+}
+@media (max-width: 303px) {
+    .front-end-skills,
+    .back-end-skills {
+        width: 100%; /* Full width for smaller screens */
+        margin-right: 0;
+    }
+}
