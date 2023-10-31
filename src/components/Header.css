@@ -1,0 +1,107 @@
+.header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(2rem + 2vmin);
+    color: white;
+    text-align: center;
+}
+
+
+.header-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 20px;
+}
+
+  
+  .left-content {
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+
+  }
+  
+  .fixed-text p {
+    font-size: 1.6rem;
+    width: 56rem;
+    margin: 0;
+  }
+  
+  .ps {
+    color: rgba(242, 243, 244, 0.584);
+  }
+  
+  .right-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Move the content to the right side */
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem; /* Add margin from the right side using rem */
+    background-color: #282c34; /* Add the background color of your header */
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+
+.my-image {
+    display: block;
+    width: auto;
+    max-height: 50vh; /* Adjust max-height as needed to prevent cutting */
+    border-radius: 60%;
+    object-fit: cover;
+    margin-top: -0.01099rem; /* Adjust the margin from the top */
+    margin-right: 1.2rem; /* Reset margin-right */
+    margin-bottom: 60px; /* Add margin from the right side using rem */
+}
+
+  
+  .animate-character {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FF5733, purple, #5733FF);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 3.8s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+  
+  .download-link.button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .download-link.button:hover {
+    background-color: #0056b3;
+  }
+  

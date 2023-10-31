@@ -1,0 +1,65 @@
+/* Education.css */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+ 
+    
+}
+
+/* Education.css */
+
+/* ... (previous CSS) */
+
+/* Education.css */
+
+/* ... (previous CSS) */
+
+/* Education.css */
+
+/* ... (previous CSS) */
+
+/* Education.css */
+
+.education-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; /* Keep the width as is */
+    height: 200px; /* Increase the height to make the box taller */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* ... (other CSS rules) */
+
+
+.education-image {
+    max-width: 70px; /* Adjust the max-width as needed to make the image smaller */
+    margin-right: 20px; /* Add margin to separate the image from the text */
+}
+
+.education-header h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center; /* Center the image vertically with text */
+}
+
+.education-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+h1 {
+    color: white;
+}

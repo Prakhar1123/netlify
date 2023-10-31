@@ -1,0 +1,112 @@
+/* Project.css */
+.projects {
+    text-align: center;
+  }
+  
+  .projects h1 {
+    color: white;
+    margin: 20px 0;
+  }
+  
+  .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-box,
+  .project-box_,
+  .project-box__ {
+    flex: 1;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    min-height: 300px; /* Set a minimum height for each box */
+  }
+  
+  .project-box h3,
+  .project-box_ h3,
+  .project-box__ h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .project-box p,
+  .project-box_ p,
+  .project-box__ p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .demo-button,
+  .github-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 70%;
+  }
+  
+  .demo-button:hover,
+  .github-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .github-button{
+    width: 70px;
+    height: 20px;
+    margin: 20px;
+    padding: 10px;
+  }
+  .project-images {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.project-images img {
+    max-width: 100px; 
+    height: 90px;
+    margin-right: 1.7px;
+    justify-content: space-between;
+}
+.project-images_ {
+    display: flex;
+    height:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-images_ img {
+    max-width: 100px; 
+    height: 86px;
+    margin-right: 1.7px;
+    justify-content: space-between;/* Adjust the max-width as needed to make the images smaller */
+}
+/* Project.css */
+/* ... (previous CSS) */
+
+.project-images__ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-images__ img {
+    max-width: 100px;
+    height: 86px; /* Adjust the max-width as needed to make the images smaller */
+}
+
+.project-box_ h3{
+    font-size: 22px;
+}
+

@@ -1,0 +1,41 @@
+/* Navbar.css */
+.navbar {
+    background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Create space between the title and links */
+    align-items: center;
+    padding: 10px 20px; /* Add padding to the top and sides */
+  }
+  
+  .portfolio-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .navbar.hidden {
+    top: -70px;
+  }
