@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css'; // Import your CSS file for styling
+import './Project.css'; 
 import img from './adidas1.jpg';
 import img1 from './puma1.jpg';
 import img2 from './puma2.jpg';
