@@ -17,7 +17,7 @@ const Header = () => {
     return () => {
       clearInterval(animationInterval);
     };
-  }, []);
+  }, [text]); // Include "text" as a dependency
 
   return (
     <header id="header" className="header">
