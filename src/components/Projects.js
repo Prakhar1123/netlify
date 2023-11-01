@@ -1,5 +1,5 @@
 import React from 'react';
-import './Project.css'; 
+import './Project.css'; // Import your CSS file for styling
 import img from './adidas1.jpg';
 import img1 from './puma1.jpg';
 import img2 from './puma2.jpg';
@@ -34,9 +34,9 @@ const Projects = () => {
         </div>
         <div className="project-box_">
           <div className="project-images_">
-            <img src={img3} alt="Iron Man Image" />
-            <img src={img4} alt="Captain America Image" />
-            <img src={img5} alt="Thor Image" />
+            <img src={img3} alt="Iron Man" />
+            <img src={img4} alt="Captain America" />
+            <img src={img5} alt="Thor" />
           </div>
           <h3>Avengers Game using Reactjs</h3>
           <p>
