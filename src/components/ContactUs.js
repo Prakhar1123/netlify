@@ -1,18 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactForm.css';
-
-export const ContactUs = () => {
+const ContactUs = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    const templateParams = {
-      user_name: form.current.user_name.value, // Get the sender's name from the form
-      user_email: form.current.user_email.value, // Get the sender's email
-      message: form.current.message.value, // Get the message content
-    };
 
     emailjs.sendForm('service_sqvdgvq', 'template_kqf4jm5', form.current, 'RuU4mBxiZA4U47r5T')
       .then(
@@ -44,4 +37,4 @@ export const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUs
