@@ -63,9 +63,9 @@ const Projects = () => {
         </div>
         <div className="project-box__">
           <div className="project-images__">
-            <img src={img6} alt="Todo List Image 1" />
-            <img src={img7} alt="Todo List Image 2" />
-            <img src={img8} alt="Todo List Image 3" />
+            <img src={img6} alt="Todo List  1" />
+            <img src={img7} alt="Todo List  2" />
+            <img src={img8} alt="Todo List 3" />
           </div>
           <h3>Todo-List using React Js</h3>
           <p>Created a task management application that enables users to view, add, mark complete, delete, and edit tasks.</p>
